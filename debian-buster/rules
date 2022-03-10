@@ -20,4 +20,4 @@ export DH_OPTIONS
 	dh $@ 
 
 override_dh_auto_build:
-	make -j1 FFLAG="-g -O3 -ffpe-summary=none -fopenmp -cpp -Dtimer -Wall  -fallow-argument-mismatch" FLIB="-llapack -lblas"
+	make -j1 FFLAG="-g -O3 -ffpe-summary=none -fopenmp -cpp -Dtimer -Wall" FLIB="-llapack -lblas"
